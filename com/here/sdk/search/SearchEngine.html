@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Explore v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="d16cb5ea-1521-46f7-8e26-89ed6067ac58"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:41:51+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Explore v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="4ada5ec6-1e16-4e77-8dc0-6b0f1511738f"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:40+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -242,19 +242,24 @@ implements <a href="SearchInterface.html" title="interface in com.here.sdk.searc
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets a custom option for search backend queries.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#suggest(com.here.sdk.search.TextQuery,com.here.sdk.search.SearchOptions,com.here.sdk.search.SuggestCallbackExtended)" class="member-name-link">suggest</a><wbr>(<a href="TextQuery.html" title="class in com.here.sdk.search">TextQuery</a> query,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEVInterface(com.here.sdk.search.EVSearchInterface)" class="member-name-link">setEVInterface</a><wbr>(<a href="EVSearchInterface.html" title="interface in com.here.sdk.search">EVSearchInterface</a> evcpInterface)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the EV interface through which search will interact with EVCP3.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#suggest(com.here.sdk.search.TextQuery,com.here.sdk.search.SearchOptions,com.here.sdk.search.SuggestCallbackExtended)" class="member-name-link">suggest</a><wbr>(<a href="TextQuery.html" title="class in com.here.sdk.search">TextQuery</a> query,
  <a href="SearchOptions.html" title="class in com.here.sdk.search">SearchOptions</a> options,
  <a href="SuggestCallbackExtended.html" title="interface in com.here.sdk.search">SuggestCallbackExtended</a> callback)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Performs an asynchronous request to suggest places for text queries and
  returns candidate suggestions sorted by relevance.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#suggestByText(com.here.sdk.search.TextQuery,com.here.sdk.search.SearchOptions,com.here.sdk.search.SuggestCallback)" class="member-name-link">suggestByText</a><wbr>(<a href="TextQuery.html" title="class in com.here.sdk.search">TextQuery</a> query,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#suggestByText(com.here.sdk.search.TextQuery,com.here.sdk.search.SearchOptions,com.here.sdk.search.SuggestCallback)" class="member-name-link">suggestByText</a><wbr>(<a href="TextQuery.html" title="class in com.here.sdk.search">TextQuery</a> query,
  <a href="SearchOptions.html" title="class in com.here.sdk.search">SearchOptions</a> options,
  <a href="SuggestCallback.html" title="interface in com.here.sdk.search">SuggestCallback</a> callback)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Performs an asynchronous request to suggest places for text queries and
  returns suggestions sorted by relevance.</div>
 </div>
@@ -603,6 +608,20 @@ implements <a href="SearchInterface.html" title="interface in com.here.sdk.searc
 <dd><code>value</code> - <p>Option value.</p></dd>
 <dt>Returns:</dt>
 <dd><p>Error in case when setting the option fails.</p></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setEVInterface(com.here.sdk.search.EVSearchInterface)">
+<h3>setEVInterface</h3>
+<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">void</span> <span class="element-name">setEVInterface</span><wbr><span class="parameters">(@NonNull
+ <a href="EVSearchInterface.html" title="interface in com.here.sdk.search">EVSearchInterface</a> evcpInterface)</span></wbr></div>
+<div class="block"><p>Sets the EV interface through which search will interact with EVCP3.
+ <strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
+ Related APIs may change for new releases without a deprecation process.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>evcpInterface</code> - <p>The EV search interface implementation.</p></dd>
 </dl>
 </section>
 </li>

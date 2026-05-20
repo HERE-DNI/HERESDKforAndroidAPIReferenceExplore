@@ -6,6 +6,7 @@ com.here.sdk.core.errors
 com.here.sdk.core.threading
 com.here.sdk.core.utilities
 com.here.sdk.engine
+com.here.sdk.ev
 com.here.sdk.gestures
 com.here.sdk.mapview
 com.here.sdk.mapview.datasource
