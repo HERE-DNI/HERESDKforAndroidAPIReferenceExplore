@@ -3153,7 +3153,9 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/RoadShieldIconProperties.html#countryCode" class="member-name-link">countryCode</a> - Variable in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/RoadShieldIconProperties.html" title="class in com.here.sdk.mapview">RoadShieldIconProperties</a></dt>
 <dd>
-<div class="block">The country code in ISO-3166-1 alpha-3 format, which will determine the type of road shield.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use <a href="com/here/sdk/mapview/RoadShieldIconProperties.html#isoCountryCode"><code>RoadShieldIconProperties.isoCountryCode</code></a> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/routing/Toll.html#countryCode" class="member-name-link">countryCode</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/Toll.html" title="class in com.here.sdk.routing">Toll</a></dt>
 <dd>
@@ -4136,7 +4138,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapContext.MemoryManagementStrategy.html#DYNAMIC" class="member-name-link">DYNAMIC</a> - Enum constant in enum class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapContext.MemoryManagementStrategy.html" title="enum class in com.here.sdk.mapview">MapContext.MemoryManagementStrategy</a></dt>
 <dd>
-<div class="block">The cache of all loaded map-data can adjust dynamically to fit visible data.</div>
+<div class="block">The cache of all loaded map-data adjusts dynamically based on visible data requirements.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/DynamicSpeedInfo.html" class="type-name-link" title="class in com.here.sdk.routing">DynamicSpeedInfo</a> - Class in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
 <dd>
@@ -4764,6 +4766,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/routing/RouteOptions.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteOptions.html" title="class in com.here.sdk.routing">RouteOptions</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/RoutePlace.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutePlace.html" title="class in com.here.sdk.routing">RoutePlace</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/RouteTextOptions.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTextOptions.html" title="class in com.here.sdk.routing">RouteTextOptions</a></dt>
 <dd>&nbsp;</dd>
@@ -6193,6 +6197,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new instance.</div>
 </dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html#generate()" class="member-name-link">generate()</a> - Static method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></dt>
+<dd>
+<div class="block">Generates a new unique route tag using a random UUID.</div>
+</dd>
 <dt><a href="com/here/sdk/search/GenericFuel.html" class="type-name-link" title="class in com.here.sdk.search">GenericFuel</a> - Class in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
 <dd>
 <div class="block">Contains generic fuel type info of fuel station.</div>
@@ -7101,6 +7109,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the textual attributes of the intersection.</div>
 </dd>
+<dt><a href="com/here/sdk/routing/Span.html#getIsoCountryCode()" class="member-name-link">getIsoCountryCode()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/Span.html" title="class in com.here.sdk.routing">Span</a></dt>
+<dd>
+<div class="block">Gets the ISO 3166-1 alpha-3 country code of the span as enum.</div>
+</dd>
 <dt><a href="com/here/sdk/traffic/TrafficFlow.html#getJamFactor()" class="member-name-link">getJamFactor()</a> - Method in class com.here.sdk.traffic.<a href="com/here/sdk/traffic/TrafficFlow.html" title="class in com.here.sdk.traffic">TrafficFlow</a></dt>
 <dd>
 <div class="block">Gets a value for the amount of traffic on the roadway.</div>
@@ -7159,7 +7171,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#getLights()" class="member-name-link">getLights()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
-<div class="block">Gets a MapSceneLights instance that controls lights present in the scene.</div>
+<div class="block">Gets a <a href="com/here/sdk/mapview/MapSceneLights.html" title="class in com.here.sdk.mapview"><code>MapSceneLights</code></a> instance that controls lights present in the scene.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapCamera.html#getLimits()" class="member-name-link">getLimits()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapCamera.html" title="class in com.here.sdk.mapview">MapCamera</a></dt>
 <dd>
@@ -7569,6 +7581,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets route labels.</div>
 </dd>
+<dt><a href="com/here/sdk/routing/Route.html#getRouteTag()" class="member-name-link">getRouteTag()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/Route.html" title="class in com.here.sdk.routing">Route</a></dt>
+<dd>
+<div class="block">Gets the unique identifier of this route.</div>
+</dd>
 <dt><a href="com/here/sdk/routing/Route.html#getRoutingOptions()" class="member-name-link">getRoutingOptions()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/Route.html" title="class in com.here.sdk.routing">Route</a></dt>
 <dd>
 <div class="block">Gets the options used to calculate this route.</div>
@@ -7748,8 +7764,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#getSupportedFeatures()" class="member-name-link">getSupportedFeatures()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
-<div class="block">Gets features and all of their modes supported by the currently
- loaded scene configuration.</div>
+<div class="block">Gets features and all of their modes supported by the currently loaded scene configuration.</div>
 </dd>
 <dt><a href="com/here/sdk/search/EVChargingLocation.html#getSupportedVehicles()" class="member-name-link">getSupportedVehicles()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/EVChargingLocation.html" title="class in com.here.sdk.search">EVChargingLocation</a></dt>
 <dd>
@@ -8414,6 +8429,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/RoutePlace.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutePlace.html" title="class in com.here.sdk.routing">RoutePlace</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/RouteTextOptions.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTextOptions.html" title="class in com.here.sdk.routing">RouteTextOptions</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/RoutingConnectionSettings.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingConnectionSettings.html" title="class in com.here.sdk.routing">RoutingConnectionSettings</a></dt>
@@ -8659,6 +8676,11 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/search/TruckAmenities.html#hasIdleReductionSystem" class="member-name-link">hasIdleReductionSystem</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/TruckAmenities.html" title="class in com.here.sdk.search">TruckAmenities</a></dt>
 <dd>
 <div class="block">Has idle reduction system</div>
+</dd>
+<dt><a href="com/here/sdk/search/EVChargingLocation.html#hasMoreNearbyPlaces()" class="member-name-link">hasMoreNearbyPlaces()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/EVChargingLocation.html" title="class in com.here.sdk.search">EVChargingLocation</a></dt>
+<dd>
+<div class="block">Gets a boolean flag indicating whether there are additional nearby places beyond
+ those included in the nearbyPlaces list.</div>
 </dd>
 <dt><a href="com/here/sdk/search/TruckAmenities.html#hasParking" class="member-name-link">hasParking</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/TruckAmenities.html" title="class in com.here.sdk.search">TruckAmenities</a></dt>
 <dd>
@@ -9823,11 +9845,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Boolean flag indicating if the energy is 100% from regenerative sources.</div>
 </dd>
-<dt><a href="com/here/sdk/search/EVChargingLocation.html#isHasMoreNearbyPlaces()" class="member-name-link">isHasMoreNearbyPlaces()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/EVChargingLocation.html" title="class in com.here.sdk.search">EVChargingLocation</a></dt>
-<dd>
-<div class="block">Gets a boolean flag indicating whether there are additional nearby places beyond
- those included in the nearbyPlaces list.</div>
-</dd>
 <dt><a href="com/here/sdk/core/CountryCode.html#ISL" class="member-name-link">ISL</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/CountryCode.html" title="enum class in com.here.sdk.core">CountryCode</a></dt>
 <dd>
 <div class="block">Iceland</div>
@@ -9839,6 +9856,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/search/GeoPlace.html#isMyPlace()" class="member-name-link">isMyPlace()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/GeoPlace.html" title="class in com.here.sdk.search">GeoPlace</a></dt>
 <dd>
 <div class="block">Allow the client to access info about is it my place or not.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/RoadShieldIconProperties.html#isoCountryCode" class="member-name-link">isoCountryCode</a> - Variable in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/RoadShieldIconProperties.html" title="class in com.here.sdk.mapview">RoadShieldIconProperties</a></dt>
+<dd>
+<div class="block">The country code in ISO-3166-1 alpha-3 format, which will determine the type of road shield.</div>
 </dd>
 <dt><a href="com/here/sdk/traffic/TrafficIncident.VehicleRestriction.html#isOddNumberPlateRestricted" class="member-name-link">isOddNumberPlateRestricted</a> - Variable in class com.here.sdk.traffic.<a href="com/here/sdk/traffic/TrafficIncident.VehicleRestriction.html" title="class in com.here.sdk.traffic">TrafficIncident.VehicleRestriction</a></dt>
 <dd>
@@ -10710,11 +10731,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#loadScene(java.lang.String,com.here.sdk.mapview.MapScene.LoadSceneCallback)" class="member-name-link">loadScene(String, MapScene.LoadSceneCallback)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
-<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported formats.</div>
+<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported
+ formats.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#loadScene(java.lang.String,com.here.sdk.mapview.WatermarkStyle,com.here.sdk.mapview.MapScene.LoadSceneCallback)" class="member-name-link">loadScene(String, WatermarkStyle, MapScene.LoadSceneCallback)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
-<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported formats.</div>
+<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported
+ formats.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/datasource/LineTileSource.html#loadTile(com.here.sdk.mapview.datasource.TileKey,com.here.sdk.mapview.datasource.LineTileSource.LoadResultHandler)" class="member-name-link">loadTile(TileKey, LineTileSource.LoadResultHandler)</a> - Method in interface com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/LineTileSource.html" title="interface in com.here.sdk.mapview.datasource">LineTileSource</a></dt>
 <dd>
@@ -11171,8 +11194,8 @@ loadScripts(document, 'script');</script>
 <div class="block">Pickable map content currently consists of:
  
  Embedded carto POI markers that by default are available on the map.
- Traffic incidents that are visible when they are enabled using <a href="com/here/sdk/mapview/MapScene.html#enableFeatures(java.util.Map)"><code>MapScene.enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a>
- with <a href="com/here/sdk/mapview/MapFeatures.html#TRAFFIC_INCIDENTS"><code>MapFeatures.TRAFFIC_INCIDENTS</code></a>.
+ Traffic incidents that are visible when they are enabled using
+ <a href="com/here/sdk/mapview/MapScene.html#enableFeatures(java.util.Map)"><code>MapScene.enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a> with <a href="com/here/sdk/mapview/MapFeatures.html#TRAFFIC_INCIDENTS"><code>MapFeatures.TRAFFIC_INCIDENTS</code></a>.
  Vehicle restrictions are only available for the Navigate license.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapScene.MapPickFilter.ContentType.html#MAP_ITEMS" class="member-name-link">MAP_ITEMS</a> - Enum constant in enum class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.MapPickFilter.ContentType.html" title="enum class in com.here.sdk.mapview">MapScene.MapPickFilter.ContentType</a></dt>
@@ -12715,7 +12738,7 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/search/EVChargingLocationFeature.html#NEARBY" class="member-name-link">NEARBY</a> - Enum constant in enum class com.here.sdk.search.<a href="com/here/sdk/search/EVChargingLocationFeature.html" title="enum class in com.here.sdk.search">EVChargingLocationFeature</a></dt>
 <dd>
 <div class="block"><a href="com/here/sdk/search/EVChargingLocation.html#getFacilityTypes()"><code>EVChargingLocation.getFacilityTypes()</code></a>, <a href="com/here/sdk/search/EVChargingLocation.html#getNearbyPlaces()"><code>EVChargingLocation.getNearbyPlaces()</code></a> and
- <a href="com/here/sdk/search/EVChargingLocation.html#isHasMoreNearbyPlaces()"><code>EVChargingLocation.isHasMoreNearbyPlaces()</code></a> will be returned.</div>
+ <a href="com/here/sdk/search/EVChargingLocation.html#hasMoreNearbyPlaces()"><code>EVChargingLocation.hasMoreNearbyPlaces()</code></a> will be returned.</div>
 </dd>
 <dt><a href="com/here/sdk/search/NearbyPlace.html" class="type-name-link" title="class in com.here.sdk.search">NearbyPlace</a> - Class in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
 <dd>
@@ -13348,6 +13371,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Called after the render target has been released.</div>
 </dd>
+<dt><a href="com/here/sdk/mapview/MapView.html#onRestart()" class="member-name-link">onRestart()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapView.html" title="class in com.here.sdk.mapview">MapView</a></dt>
+<dd>
+<div class="block">Call this method in the onRestart() method of the lifecycle owner.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/MapSurface.html#onResume()" class="member-name-link">onResume()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapSurface.html" title="class in com.here.sdk.mapview">MapSurface</a></dt>
 <dd>
 <div class="block">Call this method in the onResume() method of the lifecycle owner.</div>
@@ -13402,6 +13429,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/MapContext.SetMemoryManagementOptionsCallback.html#onSetMemoryManagementOptions(com.here.sdk.mapview.MapContext.MemoryManagementResult)" class="member-name-link">onSetMemoryManagementOptions(MapContext.MemoryManagementResult)</a> - Method in interface com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapContext.SetMemoryManagementOptionsCallback.html" title="interface in com.here.sdk.mapview">MapContext.SetMemoryManagementOptionsCallback</a></dt>
 <dd>
 <div class="block">Callback to handle the memory management result.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/MapView.html#onStop()" class="member-name-link">onStop()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapView.html" title="class in com.here.sdk.mapview">MapView</a></dt>
+<dd>
+<div class="block">Call this method in the onStop() method of the lifecycle owner.</div>
 </dd>
 <dt><a href="com/here/sdk/search/SuggestCallback.html#onSuggestCompleted(com.here.sdk.search.SearchError,java.util.List)" class="member-name-link">onSuggestCompleted(SearchError, List&lt;Suggestion&gt;)</a> - Method in interface com.here.sdk.search.<a href="com/here/sdk/search/SuggestCallback.html" title="interface in com.here.sdk.search">SuggestCallback</a></dt>
 <dd>
@@ -14036,7 +14067,9 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/core/errors/InstantiationErrorCode.html#PERSISTENT_MAP_STORAGE_FOLDER_ACCESS_DENIED" class="member-name-link">PERSISTENT_MAP_STORAGE_FOLDER_ACCESS_DENIED</a> - Enum constant in enum class com.here.sdk.core.errors.<a href="com/here/sdk/core/errors/InstantiationErrorCode.html" title="enum class in com.here.sdk.core.errors">InstantiationErrorCode</a></dt>
 <dd>
-<div class="block">Access to the specified persistent map storage folder is denied</div>
+<div class="block">Access to the specified persistent map storage folder is denied
+ This may occur on Android due to insufficient permissions or scoped storage restrictions
+ (e.g.</div>
 </dd>
 <dt><a href="com/here/sdk/core/engine/SDKOptions.html#persistentMapStoragePath" class="member-name-link">persistentMapStoragePath</a> - Variable in class com.here.sdk.core.engine.<a href="com/here/sdk/core/engine/SDKOptions.html" title="class in com.here.sdk.core.engine">SDKOptions</a></dt>
 <dd>
@@ -15735,9 +15768,15 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Contains the information required to create a road shield image.</div>
 </dd>
+<dt><a href="com/here/sdk/mapview/RoadShieldIconProperties.html#%3Cinit%3E(com.here.sdk.core.RouteType,com.here.sdk.core.CountryCode,java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">RoadShieldIconProperties(RouteType, CountryCode, String, String, String)</a> - Constructor for class com.here.sdk.mapview.<a href="com/here/sdk/mapview/RoadShieldIconProperties.html" title="class in com.here.sdk.mapview">RoadShieldIconProperties</a></dt>
+<dd>
+<div class="block">Construct RoadShieldIconProperties instance with isoCountryCode.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/RoadShieldIconProperties.html#%3Cinit%3E(com.here.sdk.core.RouteType,java.lang.String,java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">RoadShieldIconProperties(RouteType, String, String, String, String)</a> - Constructor for class com.here.sdk.mapview.<a href="com/here/sdk/mapview/RoadShieldIconProperties.html" title="class in com.here.sdk.mapview">RoadShieldIconProperties</a></dt>
 <dd>
-<div class="block">Creates a new instance.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use constructor with <code>isoCountryCode</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/routing/RoadTexts.html" class="type-name-link" title="class in com.here.sdk.routing">RoadTexts</a> - Class in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
 <dd>
@@ -15971,6 +16010,18 @@ loadScripts(document, 'script');</script>
 <div class="block">Route stop that should be used together with import route functionality.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/RouteStop.html#%3Cinit%3E(int)" class="member-name-link">RouteStop(int)</a> - Constructor for class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteStop.html" title="class in com.here.sdk.routing">RouteStop</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/TrafficOnRoute.html#routeTag" class="member-name-link">routeTag</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/TrafficOnRoute.html" title="class in com.here.sdk.routing">TrafficOnRoute</a></dt>
+<dd>
+<div class="block">The unique identifier of the route this traffic information belongs to.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html" class="type-name-link" title="class in com.here.sdk.routing">RouteTag</a> - Class in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
+<dd>
+<div class="block">Uniquely identifies a route.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html#%3Cinit%3E()" class="member-name-link">RouteTag()</a> - Constructor for class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></dt>
 <dd>
 <div class="block">Creates a new instance.</div>
 </dd>
@@ -19788,6 +19839,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/MapMeasure.html#value" class="member-name-link">value</a> - Variable in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a></dt>
 <dd>
 <div class="block">The measure value.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html#value" class="member-name-link">value</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></dt>
+<dd>
+<div class="block">The raw tag string.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/FarePriceType.html#VALUE" class="member-name-link">VALUE</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/FarePriceType.html" title="enum class in com.here.sdk.routing">FarePriceType</a></dt>
 <dd>
