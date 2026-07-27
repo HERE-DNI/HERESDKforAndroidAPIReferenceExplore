@@ -303,9 +303,21 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Adds a map polyline to this map scene.</div>
 </dd>
+<dt><a href="com/here/sdk/mapview/MapScene.html#addMapPolyline(com.here.sdk.mapview.MapPolyline,java.lang.String)" class="member-name-link">addMapPolyline(MapPolyline, String)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
+<dd>
+<div class="block">Adds a single polyline to the layer identified by a layer name.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/MapScene.html#addMapPolylineLayer(java.lang.String,com.here.sdk.mapview.MapLayerPriority)" class="member-name-link">addMapPolylineLayer(String, MapLayerPriority)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
+<dd>
+<div class="block">Creates and registers a new polyline layer for this map scene.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#addMapPolylines(java.util.List)" class="member-name-link">addMapPolylines(List&lt;MapPolyline&gt;)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
 <div class="block">Adds map polylines to this map scene.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/MapScene.html#addMapPolylines(java.util.List,java.lang.String)" class="member-name-link">addMapPolylines(List&lt;MapPolyline&gt;, String)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
+<dd>
+<div class="block">Adds multiple polylines to the layer identified by a layer name.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/datasource/DataAttributesAccessor.html#addOrReplace(java.lang.String,boolean)" class="member-name-link">addOrReplace(String, boolean)</a> - Method in class com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/DataAttributesAccessor.html" title="class in com.here.sdk.mapview.datasource">DataAttributesAccessor</a></dt>
 <dd>
@@ -942,6 +954,18 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/core/engine/AuthenticationMode.AccessTokenProvider.html" class="type-name-link" title="interface in com.here.sdk.core.engine">AuthenticationMode.AccessTokenProvider</a> - Interface in <a href="com/here/sdk/core/engine/package-summary.html">com.here.sdk.core.engine</a></dt>
 <dd>
 <div class="block">This lambda is used to retrieve access token in synchronous manner.</div>
+</dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html" class="type-name-link" title="enum class in com.here.sdk.core">AuthorizationError</a> - Enum Class in <a href="com/here/sdk/core/package-summary.html">com.here.sdk.core</a></dt>
+<dd>
+<div class="block">AuthorizationError represents an error's enum</div>
+</dd>
+<dt><a href="com/here/sdk/core/AuthorizationException.html" class="type-name-link" title="class in com.here.sdk.core">AuthorizationException</a> - Exception in <a href="com/here/sdk/core/package-summary.html">com.here.sdk.core</a></dt>
+<dd>
+<div class="block">Authorization exception</div>
+</dd>
+<dt><a href="com/here/sdk/core/AuthorizedFeaturesCallback.html" class="type-name-link" title="interface in com.here.sdk.core">AuthorizedFeaturesCallback</a> - Interface in <a href="com/here/sdk/core/package-summary.html">com.here.sdk.core</a></dt>
+<dd>
+<div class="block">Callback used to retrieve allowed features.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/TransportType.html#AUTOMOBILES" class="member-name-link">AUTOMOBILES</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/TransportType.html" title="enum class in com.here.sdk.transport">TransportType</a></dt>
 <dd>
@@ -5581,6 +5605,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">The angle range extent, running clockwise, in degrees from start.</div>
 </dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html#EXTERNAL_AUTHENTICATION" class="member-name-link">EXTERNAL_AUTHENTICATION</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthorizationError.html" title="enum class in com.here.sdk.core">AuthorizationError</a></dt>
+<dd>
+<div class="block">External authentication is used, therefore authorization is not available.</div>
+</dd>
 <dt><a href="com/here/sdk/core/LocationSource.html#EXTERNAL_SOURCE" class="member-name-link">EXTERNAL_SOURCE</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/LocationSource.html" title="enum class in com.here.sdk.core">LocationSource</a></dt>
 <dd>
 <div class="block">Location computed outside of the device running HERE SDK.</div>
@@ -5672,6 +5700,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/datasource/RasterTileSource.LoadResultHandler.html#failed(com.here.sdk.mapview.datasource.TileKey)" class="member-name-link">failed(TileKey)</a> - Method in interface com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/RasterTileSource.LoadResultHandler.html" title="interface in com.here.sdk.mapview.datasource">RasterTileSource.LoadResultHandler</a></dt>
 <dd>
 <div class="block">Called upon failed load tile request.</div>
+</dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html#FAILED" class="member-name-link">FAILED</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthorizationError.html" title="enum class in com.here.sdk.core">AuthorizationError</a></dt>
+<dd>
+<div class="block">Operation failed.</div>
 </dd>
 <dt><a href="com/here/sdk/core/errors/InstantiationErrorCode.html#FAILED" class="member-name-link">FAILED</a> - Enum constant in enum class com.here.sdk.core.errors.<a href="com/here/sdk/core/errors/InstantiationErrorCode.html" title="enum class in com.here.sdk.core.errors">InstantiationErrorCode</a></dt>
 <dd>
@@ -9746,6 +9778,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Invalid parameter is received.</div>
 </dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html#INVALID_PARAMETER" class="member-name-link">INVALID_PARAMETER</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthorizationError.html" title="enum class in com.here.sdk.core">AuthorizationError</a></dt>
+<dd>
+<div class="block">Invalid parameter was received.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/TranslucentMapLayerGroup.ErrorCode.html#INVALID_PARAMETER" class="member-name-link">INVALID_PARAMETER</a> - Enum constant in enum class com.here.sdk.mapview.<a href="com/here/sdk/mapview/TranslucentMapLayerGroup.ErrorCode.html" title="enum class in com.here.sdk.mapview">TranslucentMapLayerGroup.ErrorCode</a></dt>
 <dd>
 <div class="block">Invalid parameter provided.</div>
@@ -13280,6 +13316,10 @@ loadScripts(document, 'script');</script>
 <div class="block">The method that will be called on the main thread when a search operation in <code>EVSearchEngine</code>
  has been completed.</div>
 </dd>
+<dt><a href="com/here/sdk/core/AuthorizedFeaturesCallback.html#onFeaturesReceived(java.util.List,com.here.sdk.core.AuthorizationError)" class="member-name-link">onFeaturesReceived(List&lt;LayerConfiguration.Feature&gt;, AuthorizationError)</a> - Method in interface com.here.sdk.core.<a href="com/here/sdk/core/AuthorizedFeaturesCallback.html" title="interface in com.here.sdk.core">AuthorizedFeaturesCallback</a></dt>
+<dd>
+<div class="block">Callback used to retrieve allowed features.</div>
+</dd>
 <dt><a href="com/here/sdk/gestures/FlingHandler.html#onFling(float,float)" class="member-name-link">onFling(float, float)</a> - Method in class com.here.sdk.gestures.<a href="com/here/sdk/gestures/FlingHandler.html" title="class in com.here.sdk.gestures">FlingHandler</a></dt>
 <dd>
 <div class="block">To be called to trigger fling gesture handling.</div>
@@ -15458,6 +15498,11 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/MapScene.html#removeMapPolyline(com.here.sdk.mapview.MapPolyline)" class="member-name-link">removeMapPolyline(MapPolyline)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
 <div class="block">Removes a map polyline from this map scene.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/MapScene.html#removeMapPolylineLayer(java.lang.String)" class="member-name-link">removeMapPolylineLayer(String)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
+<dd>
+<div class="block">Removes the polyline layer identified by a name from this map scene, including all polylines
+ contained in it.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#removeMapPolylines(java.util.List)" class="member-name-link">removeMapPolylines(List&lt;MapPolyline&gt;)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
@@ -19946,6 +19991,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthorizationError.html" title="enum class in com.here.sdk.core">AuthorizationError</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
 <dt><a href="com/here/sdk/core/BodyFrame.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.core.<a href="com/here/sdk/core/BodyFrame.html" title="enum class in com.here.sdk.core">BodyFrame</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
@@ -20604,6 +20653,11 @@ the order they are declared.</div>
 the order they are declared.</div>
 </dd>
 <dt><a href="com/here/sdk/core/AuthenticationError.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthenticationError.html" title="enum class in com.here.sdk.core">AuthenticationError</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
+</dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthorizationError.html" title="enum class in com.here.sdk.core">AuthorizationError</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
